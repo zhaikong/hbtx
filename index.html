@@ -257,7 +257,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 lg:mt-0 text-center">
                 <div class="reveal reveal-delay-1 border-2 border-gray-800 p-8 rounded-lg">
                     <p class="text-5xl font-black tesla-red">2 <span class="text-3xl">小时</span></p>
-                    <p class="mt-4 text-gray-300">形成</p>
+                    <p class="mt-4 text-gray-300">形成报告</p>
                 </div>
                 <div class="reveal reveal-delay-2 border-2 border-gray-800 p-8 rounded-lg">
                     <p class="text-5xl font-black tesla-red">48 <span class="text-3xl">小时</span></p>
@@ -279,7 +279,8 @@
                 </div>
                 <div class="flex-1 text-center reveal reveal-delay-3">
                     <i class="fas fa-tools text-6xl tesla-red"></i>
-                    <h3 class="text-3xl font-bold mt-4">网下处置优先</h3>
+                    <h3 class="text-3xl font-bold mt-4">线下分项</h3>
+                    <h3 class="text-3xl font-bold mt-4">线上联动处置</h3>
                     <p class="text-gray-400 mt-2">OFFLINE DISPOSAL PRIORITY</p>
                 </div>
                 <div class="flex-1 text-center reveal reveal-delay-4">
@@ -304,7 +305,7 @@
                     </li>
                     <li class="flex items-start reveal reveal-delay-3">
                         <i class="fas fa-calendar-alt text-2xl tesla-red mt-1 mr-4"></i>
-                        <div><b class="text-xl">季度复盘 (Quarterly):</b> 分析典型案例，更新关键词库与模板。</div>
+                        <div><b class="text-xl">季度复盘 (Quarterly):</b> 分析典型案例，更新案例库、风险点及引导口径。</div>
                     </li>
                     <li class="flex items-start reveal reveal-delay-4">
                         <i class="fas fa-sync-alt text-2xl tesla-red mt-1 mr-4"></i>
@@ -324,7 +325,7 @@
                 <div class="flex-1 text-center p-6 border border-gray-800 rounded-lg reveal reveal-delay-2">
                     <i class="fas fa-users-cog text-6xl tesla-red"></i>
                     <h3 class="text-3xl font-bold mt-4">明确职责</h3>
-                    <p class="text-gray-400 mt-2">办公室统筹，涉事部门主责</p>
+                    <p class="text-gray-400 mt-2">网信办统筹，涉事部门主责</p>
                 </div>
                 <div class="flex-1 text-center p-6 border border-gray-800 rounded-lg reveal reveal-delay-3">
                     <i class="fas fa-chalkboard-teacher text-6xl tesla-red"></i>
@@ -334,7 +335,7 @@
                 <div class="flex-1 text-center p-6 border border-gray-800 rounded-lg reveal reveal-delay-4">
                     <i class="fas fa-hand-holding-usd text-6xl tesla-red"></i>
                     <h3 class="text-3xl font-bold mt-4">资源保障</h3>
-                    <p class="text-gray-400 mt-2">配备监测系统、传播资源和专项预算</p>
+                    <p class="text-gray-400 mt-2">配备监测系统、传播资源和政策支持</p>
                 </div>
             </div>
         </div>
@@ -375,24 +376,37 @@
         
         const teslaRed = '#E31937';
 
-        // CHART HAS BEEN UPDATED AS REQUESTED
+        // UPDATED Chart Options for Monitoring Chart
         const monitoringOption = {
             backgroundColor: 'transparent',
-            tooltip: {},
+            tooltip: { // Add tooltip for better UX
+                formatter: function (params) {
+                    return params.name;
+                }
+            },
             series: [{
                 type: 'graph',
                 layout: 'force',
                 animation: false,
                 roam: true,
-                label: { show: true, color: '#fff', fontSize: 16 },
-                force: { repulsion: 400, edgeLength: 120 },
+                label: { 
+                    show: true, 
+                    color: '#fff', 
+                    fontSize: 14, // Adjusted font size
+                    position: 'inside', // Ensure text is inside the circle
+                    formatter: '{b}' // Display node name
+                },
+                force: { 
+                    repulsion: 800, // Increased repulsion for more spacing
+                    edgeLength: 150 // Increased edge length
+                },
                 data: [
-                    { name: '舆情中心', symbolSize: 80, itemStyle: { color: teslaRed } },
-                    { name: '社交媒体', symbolSize: 50 },
-                    { name: '新闻门户', symbolSize: 50 },
-                    { name: '垂直社区', symbolSize: 50 },
-                    { name: '长短视频', symbolSize: 50 },
-                    { name: '12345热线', symbolSize: 50, itemStyle: { color: 'rgba(227, 25, 55, 0.7)' } }, // Different style for offline
+                    { name: '舆情中心', symbolSize: 90, itemStyle: { color: teslaRed } }, // Larger central node
+                    { name: '社交媒体', symbolSize: 65, itemStyle: { color: '#6A5ACD' } }, // Adjusted symbol size and color
+                    { name: '新闻门户', symbolSize: 65, itemStyle: { color: '#4682B4' } },
+                    { name: '垂直社区', symbolSize: 65, itemStyle: { color: '#3CB371' } },
+                    { name: '长短视频', symbolSize: 65, itemStyle: { color: '#FFD700' } },
+                    { name: '12345热线', symbolSize: 65, itemStyle: { color: 'rgba(227, 25, 55, 0.7)' } }, // Keep distinct color for offline
                 ],
                 links: [
                     { source: '舆情中心', target: '社交媒体' },
@@ -404,6 +418,7 @@
                 lineStyle: { color: 'rgba(255,255,255,0.3)', width: 1 }
             }]
         };
+
 
         const levelsOption = {
             backgroundColor: 'transparent',
