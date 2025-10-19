@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>同心县网络舆情应对与处置工作汇报</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;700;900&family=Noto+Sans+SC:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+
+    <style>
+        /* Define custom styles and animations */
+        body {
+            font-family: 'Noto Sans SC', 'Exo 2', sans-serif;
+            background-color: #000;
+            color: #fff;
+            overflow: hidden; /* Prevent native scrollbars */
+        }
+
+        /* Tesla Red Color */
+        .tesla-red {
+            color: #E31937;
+        }
+        .bg-tesla-red {
+            background-color: #E31937;
+        }
+        .border-tesla-red {
+            border-color: #E31937;
+        }
+        
+        /* Fullpage.js navigation customization */
+        #fp-nav ul li a span {
+            background: rgba(255, 255, 255, 0.5) !important;
+        }
+        #fp-nav ul li .fp-tooltip {
+            color: #fff !important;
+        }
+        #fp-nav ul li a.active span {
+            background: #E31937 !important;
+        }
+
+        /* Animation classes for elements that appear on scroll */
+        .reveal {
+            opacity: 0;
+            transform: translateY(60px) scale(0.9);
+            transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1), transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .active .reveal {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+        
+        /* Staggered animation delays */
+        .reveal-delay-1 { transition-delay: 0.2s; }
+        .reveal-delay-2 { transition-delay: 0.4s; }
+        .reveal-delay-3 { transition-delay: 0.6s; }
+        .reveal-delay-4 { transition-delay: 0.8s; }
+
+        /* Gradient effect for tech feel */
+        .tech-gradient-text {
+            background-image: linear-gradient(180deg, rgba(227, 25, 55, 1) 0%, rgba(227, 25, 55, 0.3) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .tech-gradient-border {
+            border-image: linear-gradient(180deg, rgba(227, 25, 55, 1) 0%, rgba(227, 25, 55, 0.1) 100%) 1;
+        }
+
+    </style>
+</head>
+<body class="bg-black">
+
+<div id="fullpage">
+
+    <div class="section" data-anchor="title">
+        <div class="flex flex-col items-center justify-center h-full text-center p-8">
+            <h1 class="text-5xl md:text-7xl font-black tracking-wider reveal">同心县网络舆情应对与处置工作汇报</h1>
+            <p class="text-xl md:text-2xl mt-4 text-gray-400 reveal reveal-delay-1">PUBLIC OPINION RESPONSE AND DISPOSAL PROCESS REPORT</p>
+            <div class="mt-8 space-x-8 text-gray-500 reveal reveal-delay-2">
+                <span>日期 : 2025年10月20日</span>
+            </div>
+            <div class="w-1/3 h-1 mt-16 bg-tesla-red opacity-0 reveal reveal-delay-3" style="box-shadow: 0 0 20px #E31937;"></div>
+            <p class="text-3xl md:text-5xl font-bold mt-16 tesla-red reveal reveal-delay-4">掌控舆论，而非被舆论掌控。</p>
+        </div>
+    </div>
+
+    <div class="section" data-anchor="summary">
+        <div class="flex flex-col lg:flex-row items-center justify-center h-full p-8 md:p-16">
+            <div class="lg:w-2/3 text-left">
+                <h2 class="text-2xl md:text-4xl font-bold text-gray-400 reveal">Executive Summary</h2>
+                <h1 class="text-5xl md:text-7xl font-black mt-2 reveal reveal-delay-1">执行摘要</h1>
+                <p class="text-lg md:text-xl mt-8 text-gray-300 max-w-4xl leading-relaxed reveal reveal-delay-2">
+                    本“作战地图”旨在终结信息传递的<b class="tesla-red">无序</b>、责任界定的<b class="tesla-red">模糊</b>和决策流程的<b class="tesla-red">混乱</b>，确保在任何舆情事件中，我们都能做到<b class="tesla-red">快速发现、精准研判、分级响应、有效引导</b>，最终维护组织的声誉与公信力。
+                </p>
+            </div>
+            <div class="lg:w-1/3 mt-12 lg:mt-0 flex flex-col space-y-8 text-right">
+                <div class="reveal reveal-delay-2">
+                    <h3 class="text-3xl font-bold">精准发现与研判</h3>
+                    <p class="text-gray-400">ACCURATE DISCOVERY & JUDGMENT</p>
+                </div>
+                <div class="reveal reveal-delay-3">
+                    <h3 class="text-3xl font-bold">分级响应与处置</h3>
+                    <p class="text-gray-400">GRADED RESPONSE & DISPOSAL</p>
+                </div>
+                <div class="reveal reveal-delay-4">
+                    <h3 class="text-3xl font-bold">权威引导与复盘</h3>
+                    <p class="text-gray-400">AUTHORITATIVE GUIDANCE & REVIEW</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section" data-anchor="monitoring">
+        <div class="flex flex-col lg:flex-row items-center justify-between h-full p-8 md:p-16">
+            <div class="lg:w-1/2 text-left">
+                <h2 class="text-2xl md:text-4xl font-bold text-gray-400 reveal">Mechanism</h2>
+                <h1 class="text-5xl md:text-7xl font-black mt-2 reveal reveal-delay-1">舆情监测与研判机制</h1>
+                 <ul class="mt-8 space-y-6 text-lg text-gray-300">
+                    <li class="flex items-start reveal reveal-delay-2">
+                        <i class="fas fa-sitemap text-2xl tesla-red mt-1 mr-4"></i>
+                        <div>
+                            <b class="text-xl">监测范围 (Scope):</b> 线上线下“<span class="tesla-red">全渠道</span>”。<br>
+                            <span class="text-gray-400">线上：社交媒体、新闻门户、垂直社区、长短视频。<br>线下：12345热线。</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start reveal reveal-delay-3">
+                        <i class="fas fa-magnifying-glass-chart text-2xl tesla-red mt-1 mr-4"></i>
+                        <div>
+                            <b class="text-xl">研判流程 (Process):</b> 15分钟内初步识别，立即上报，快速会商定级。
+                        </div>
+                    </li>
+                    <li class="flex items-start reveal reveal-delay-4">
+                        <i class="fas fa-headset text-2xl tesla-red mt-1 mr-4"></i>
+                        <div>
+                           <b class="text-xl">监测方式 (Method):</b> 7x24小时系统监测 + 人工相结合。
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="monitoringChart" class="w-full h-1/2 lg:w-1/2 lg:h-full mt-8 lg:mt-0 reveal reveal-delay-1"></div>
+        </div>
+    </div>
+
+    <div class="section" data-anchor="model">
+        <div class="flex items-center justify-center h-full p-8">
+            <div class="text-center">
+                <h2 class="text-2xl md:text-4xl font-bold text-gray-400 reveal">Graded Response Model</h2>
+                <h1 class="text-5xl md:text-7xl font-black mt-2 reveal reveal-delay-1">分级响应模型</h1>
+                <p class="mt-8 text-xl text-gray-300 reveal reveal-delay-2">参照《国家网络安全事件应急预案》，建立四级响应体系。</p>
+                <div id="levelsChart" class="w-full h-80 reveal reveal-delay-3"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" data-anchor="level1">
+        <div class="flex flex-col lg:flex-row items-center justify-evenly h-full p-8">
+            <div class="text-center lg:text-left lg:w-1/2 reveal">
+                <h3 class="text-4xl font-bold text-gray-500">LEVEL I RESPONSE</h3>
+                <h1 class="text-7xl md:text-9xl font-black my-4 tech-gradient-text">Ⅰ级响应</h1>
+                <p class="text-2xl font-bold">特别重大舆情事件</p>
+                <p class="mt-4 text-lg text-gray-300 max-w-xl">波及全国，严重危害国家安全、社会秩序或公共利益，动摇组织根基的极端危机。</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 lg:mt-0 text-center">
+                <div class="reveal reveal-delay-1 border-2 border-gray-800 tech-gradient-border p-8 rounded-lg">
+                    <p class="text-5xl font-black tesla-red">立即</p>
+                    <p class="text-lg">IMMEDIATELY</p>
+                    <p class="mt-4 text-gray-300">报告最高决策层</p>
+                </div>
+                <div class="reveal reveal-delay-2 border-2 border-gray-800 tech-gradient-border p-8 rounded-lg">
+                    <p class="text-5xl font-black tesla-red">1 <span class="text-3xl">小时</span></p>
+                    <p class="text-lg">HOUR</p>
+                    <p class="mt-4 text-gray-300">首次官方发声</p>
+                </div>
+                <div class="reveal reveal-delay-3 border-2 border-gray-800 tech-gradient-border p-8 rounded-lg">
+                    <p class="text-5xl font-black tesla-red">5 <span class="text-3xl">小时</span></p>
+                    <p class="text-lg">HOURS</p>
+                    <p class="mt-4 text-gray-300">发布详尽信息</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section" data-anchor="level2">
+        <div class="flex flex-col lg:flex-row items-center justify-evenly h-full p-8">
+            <div class="text-center lg:text-left lg:w-1/2 reveal">
+                <h3 class="text-4xl font-bold text-gray-500">LEVEL II RESPONSE</h3>
+                <h1 class="text-7xl md:text-9xl font-black my-4 tech-gradient-text">Ⅱ级响应</h1>
+                <p class="text-2xl font-bold">重大舆情事件</p>
+                <p class="mt-4 text-lg text-gray-300 max-w-xl">跨省市传播，对声誉造成严重损害，引发主流媒体关注。</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-2 gap-6 mt-12 lg:mt-0 text-center">
+                <div class="reveal reveal-delay-1 border-2 border-gray-800 p-6 rounded-lg">
+                    <p class="text-4xl font-black tesla-red">20 <span class="text-2xl">分钟</span></p>
+                    <p class="mt-2 text-gray-300">报告主要领导</p>
+                </div>
+                 <div class="reveal reveal-delay-2 border-2 border-gray-800 p-6 rounded-lg">
+                    <p class="text-4xl font-black tesla-red">1 <span class="text-2xl">小时</span></p>
+                    <p class="mt-2 text-gray-300">首次官方回应</p>
+                </div>
+                 <div class="reveal reveal-delay-3 border-2 border-gray-800 p-6 rounded-lg">
+                    <p class="text-4xl font-black tesla-red">5 <span class="text-2xl">小时</span></p>
+                    <p class="mt-2 text-gray-300">公布初步结果</p>
+                </div>
+                 <div class="reveal reveal-delay-4 border-2 border-gray-800 p-6 rounded-lg">
+                    <p class="text-4xl font-black tesla-red">24 <span class="text-2xl">小时</span></p>
+                    <p class="mt-2 text-gray-300">召开新闻发布会</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section" data-anchor="level3">
+        <div class="flex flex-col lg:flex-row items-center justify-evenly h-full p-8">
+            <div class="text-center lg:text-left lg:w-1/2 reveal">
+                <h3 class="text-4xl font-bold text-gray-500">LEVEL III RESPONSE</h3>
+                <h1 class="text-7xl md:text-9xl font-black my-4 tech-gradient-text">Ⅲ级响应</h1>
+                <p class="text-2xl font-bold">较大舆情事件</p>
+                <p class="mt-4 text-lg text-gray-300 max-w-xl">在特定区域或行业内广泛传播，造成较明显负面影响。</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 lg:mt-0 text-center">
+                <div class="reveal reveal-delay-1 border-2 border-gray-800 p-8 rounded-lg">
+                    <p class="text-5xl font-black tesla-red">1 <span class="text-3xl">小时</span></p>
+                    <p class="mt-4 text-gray-300">报告分管领导</p>
+                </div>
+                <div class="reveal reveal-delay-2 border-2 border-gray-800 p-8 rounded-lg">
+                    <p class="text-5xl font-black tesla-red">24 <span class="text-3xl">小时</span></p>
+                    <p class="mt-4 text-gray-300">发布事件进展</p>
+                </div>
+                <div class="reveal reveal-delay-3 border-2 border-gray-800 p-8 rounded-lg">
+                    <p class="text-5xl font-black tesla-red">72 <span class="text-3xl">小时</span></p>
+                    <p class="mt-4 text-gray-300">完成处置</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" data-anchor="level4">
+        <div class="flex flex-col lg:flex-row items-center justify-evenly h-full p-8">
+            <div class="text-center lg:text-left lg:w-1/2 reveal">
+                <h3 class="text-4xl font-bold text-gray-500">LEVEL IV RESPONSE</h3>
+                <h1 class="text-7xl md:text-9xl font-black my-4 tech-gradient-text">Ⅳ级响应</h1>
+                <p class="text-2xl font-bold">一般舆情事件</p>
+                <p class="mt-4 text-lg text-gray-300 max-w-xl">零星出现的负面信息、误解或投诉，传播范围有限。</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 lg:mt-0 text-center">
+                <div class="reveal reveal-delay-1 border-2 border-gray-800 p-8 rounded-lg">
+                    <p class="text-5xl font-black tesla-red">2 <span class="text-3xl">小时</span></p>
+                    <p class="mt-4 text-gray-300">形成</p>
+                </div>
+                <div class="reveal reveal-delay-2 border-2 border-gray-800 p-8 rounded-lg">
+                    <p class="text-5xl font-black tesla-red">48 <span class="text-3xl">小时</span></p>
+                    <p class="mt-4 text-gray-300">完成调查、回应及处置</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section" data-anchor="principles">
+        <div class="flex flex-col items-center justify-center h-full text-center p-8">
+            <h2 class="text-2xl md:text-4xl font-bold text-gray-400 reveal">Core Principles & Strategies</h2>
+            <h1 class="text-5xl md:text-7xl font-black mt-2 reveal reveal-delay-1">核心处置原则与策略</h1>
+            <div class="flex flex-col md:flex-row mt-12 gap-12">
+                <div class="flex-1 text-center reveal reveal-delay-2">
+                    <i class="fas fa-handshake text-6xl tesla-red"></i>
+                    <h3 class="text-3xl font-bold mt-4">首接负责制</h3>
+                    <p class="text-gray-400 mt-2">FIRST RESPONDER RESPONSIBILITY</p>
+                </div>
+                <div class="flex-1 text-center reveal reveal-delay-3">
+                    <i class="fas fa-tools text-6xl tesla-red"></i>
+                    <h3 class="text-3xl font-bold mt-4">网下处置优先</h3>
+                    <p class="text-gray-400 mt-2">OFFLINE DISPOSAL PRIORITY</p>
+                </div>
+                <div class="flex-1 text-center reveal reveal-delay-4">
+                    <i class="fas fa-bullhorn text-6xl tesla-red"></i>
+                    <h3 class="text-3xl font-bold mt-4">权威引导原则</h3>
+                    <p class="text-gray-400 mt-2">AUTHORITATIVE GUIDANCE</p>
+                </div>
+            </div>
+            <p class="mt-16 text-4xl font-black reveal reveal-delay-4">力争在 <span class="tesla-red text-6xl">黄金4小时</span> 内发出权威声音</p>
+        </div>
+    </div>
+    
+    <div class="section" data-anchor="review">
+        <div class="flex flex-col lg:flex-row items-center justify-between h-full p-8 md:p-16">
+            <div class="lg:w-1/2 text-left">
+                <h2 class="text-2xl md:text-4xl font-bold text-gray-400 reveal">Mechanism</h2>
+                <h1 class="text-5xl md:text-7xl font-black mt-2 reveal reveal-delay-1">复盘与迭代机制</h1>
+                 <ul class="mt-8 space-y-6 text-lg text-gray-300">
+                    <li class="flex items-start reveal reveal-delay-2">
+                        <i class="fas fa-history text-2xl tesla-red mt-1 mr-4"></i>
+                        <div><b class="text-xl">即时复盘 (Immediate):</b> Ⅲ级及以上事件，7个工作日内复盘。</div>
+                    </li>
+                    <li class="flex items-start reveal reveal-delay-3">
+                        <i class="fas fa-calendar-alt text-2xl tesla-red mt-1 mr-4"></i>
+                        <div><b class="text-xl">季度复盘 (Quarterly):</b> 分析典型案例，更新关键词库与模板。</div>
+                    </li>
+                    <li class="flex items-start reveal reveal-delay-4">
+                        <i class="fas fa-sync-alt text-2xl tesla-red mt-1 mr-4"></i>
+                        <div><b class="text-xl">年度迭代 (Annual):</b> 全面审视和修订本《流程报告》。</div>
+                    </li>
+                </ul>
+            </div>
+            <div id="iterationChart" class="w-full h-1/2 lg:w-1/2 lg:h-full mt-8 lg:mt-0 reveal reveal-delay-1"></div>
+        </div>
+    </div>
+
+    <div class="section" data-anchor="guarantee">
+        <div class="flex flex-col items-center justify-center h-full text-center p-8">
+            <h2 class="text-2xl md:text-4xl font-bold text-gray-400 reveal">Organizational Guarantee</h2>
+            <h1 class="text-5xl md:text-7xl font-black mt-2 reveal reveal-delay-1">组织保障</h1>
+             <div class="flex flex-col md:flex-row mt-16 gap-12 max-w-6xl">
+                <div class="flex-1 text-center p-6 border border-gray-800 rounded-lg reveal reveal-delay-2">
+                    <i class="fas fa-users-cog text-6xl tesla-red"></i>
+                    <h3 class="text-3xl font-bold mt-4">明确职责</h3>
+                    <p class="text-gray-400 mt-2">办公室统筹，涉事部门主责</p>
+                </div>
+                <div class="flex-1 text-center p-6 border border-gray-800 rounded-lg reveal reveal-delay-3">
+                    <i class="fas fa-chalkboard-teacher text-6xl tesla-red"></i>
+                    <h3 class="text-3xl font-bold mt-4">全员培训</h3>
+                    <p class="text-gray-400 mt-2">定期组织，确保全员理解并运用</p>
+                </div>
+                <div class="flex-1 text-center p-6 border border-gray-800 rounded-lg reveal reveal-delay-4">
+                    <i class="fas fa-hand-holding-usd text-6xl tesla-red"></i>
+                    <h3 class="text-3xl font-bold mt-4">资源保障</h3>
+                    <p class="text-gray-400 mt-2">配备监测系统、传播资源和专项预算</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize fullpage.js
+        new fullpage('#fullpage', {
+            licenseKey: 'gplv3-license', // Using GPLv3 license for open source projects
+            anchors: ['title', 'summary', 'monitoring', 'model', 'level1', 'level2', 'level3', 'level4', 'principles', 'review', 'guarantee'],
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['首页', '摘要', '监测研判', '响应模型', 'Ⅰ级响应', 'Ⅱ级响应', 'Ⅲ级响应', 'Ⅳ级响应', '核心原则', '复盘迭代', '组织保障'],
+            scrollingSpeed: 1000,
+            controlArrows: false,
+            slidesNavigation: false,
+            
+            // Animation Trigger
+            afterLoad: function(origin, destination, direction){
+                // Add 'active' class to the current section to trigger animations
+                destination.item.classList.add('active');
+            },
+            onLeave: function(origin, destination, direction){
+                // Remove 'active' class from the previous section
+                origin.item.classList.remove('active');
+            }
+        });
+
+        // ECharts Instances
+        const monitoringChartDom = document.getElementById('monitoringChart');
+        const monitoringChart = echarts.init(monitoringChartDom, 'dark');
+        const levelsChartDom = document.getElementById('levelsChart');
+        const levelsChart = echarts.init(levelsChartDom, 'dark');
+        const iterationChartDom = document.getElementById('iterationChart');
+        const iterationChart = echarts.init(iterationChartDom, 'dark');
+        
+        const teslaRed = '#E31937';
+
+        // CHART HAS BEEN UPDATED AS REQUESTED
+        const monitoringOption = {
+            backgroundColor: 'transparent',
+            tooltip: {},
+            series: [{
+                type: 'graph',
+                layout: 'force',
+                animation: false,
+                roam: true,
+                label: { show: true, color: '#fff', fontSize: 16 },
+                force: { repulsion: 400, edgeLength: 120 },
+                data: [
+                    { name: '舆情中心', symbolSize: 80, itemStyle: { color: teslaRed } },
+                    { name: '社交媒体', symbolSize: 50 },
+                    { name: '新闻门户', symbolSize: 50 },
+                    { name: '垂直社区', symbolSize: 50 },
+                    { name: '长短视频', symbolSize: 50 },
+                    { name: '12345热线', symbolSize: 50, itemStyle: { color: 'rgba(227, 25, 55, 0.7)' } }, // Different style for offline
+                ],
+                links: [
+                    { source: '舆情中心', target: '社交媒体' },
+                    { source: '舆情中心', target: '新闻门户' },
+                    { source: '舆情中心', target: '垂直社区' },
+                    { source: '舆情中心', target: '长短视频' },
+                    { source: '舆情中心', target: '12345热线' },
+                ],
+                lineStyle: { color: 'rgba(255,255,255,0.3)', width: 1 }
+            }]
+        };
+
+        const levelsOption = {
+            backgroundColor: 'transparent',
+            grid: { left: '3%', right: '4%', bottom: '3%', containLabel: true },
+            xAxis: {
+                type: 'category',
+                data: ['Ⅳ级\n一般', 'Ⅲ级\n较大', 'Ⅱ级\n重大', 'Ⅰ级\n特别重大'],
+                axisLine: { lineStyle: { color: 'rgba(255,255,255,0.3)' } },
+                axisLabel: { color: '#fff', fontSize: 14 }
+            },
+            yAxis: {
+                type: 'value',
+                name: '严重程度',
+                nameTextStyle: { color: '#fff' },
+                axisLine: { show: true, lineStyle: { color: 'rgba(255,255,255,0.3)' } },
+                splitLine: { lineStyle: { color: 'rgba(255,255,255,0.1)' } }
+            },
+            series: [{
+                data: [100, 300, 600, 1000],
+                type: 'line',
+                smooth: true,
+                symbol: 'circle',
+                symbolSize: 10,
+                itemStyle: { color: teslaRed },
+                lineStyle: { color: teslaRed, width: 4, shadowColor: 'rgba(227, 25, 55, 0.5)', shadowBlur: 10 },
+                areaStyle: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: 'rgba(227, 25, 55, 0.5)'
+                    }, {
+                        offset: 1,
+                        color: 'rgba(227, 25, 55, 0)'
+                    }])
+                }
+            }]
+        };
+
+        const iterationOption = {
+            backgroundColor: 'transparent',
+            radar: {
+                indicator: [
+                    { name: '发现', max: 100 },
+                    { name: '研判', max: 100 },
+                    { name: '处置', max: 100 },
+                    { name: '引导', max: 100 },
+                    { name: '复盘', max: 100 },
+                    { name: '迭代', max: 100 }
+                ],
+                shape: 'circle',
+                splitNumber: 5,
+                axisName: { color: 'rgb(238, 197, 102)' },
+                splitLine: { lineStyle: { color: ['rgba(255, 255, 255, 0.2)', 'rgba(255, 255, 255, 0.2)'].reverse() } },
+                splitArea: { show: false },
+                axisLine: { lineStyle: { color: 'rgba(255, 255, 255, 0.3)' } }
+            },
+            series: [{
+                type: 'radar',
+                data: [{
+                    value: [85, 90, 95, 80, 98, 92],
+                    name: '能力评估'
+                }],
+                itemStyle: { color: teslaRed },
+                lineStyle: { color: teslaRed },
+                areaStyle: { color: 'rgba(227, 25, 55, 0.3)' }
+            }]
+        };
+
+        // Set chart options
+        monitoringOption && monitoringChart.setOption(monitoringOption);
+        levelsOption && levelsChart.setOption(levelsOption);
+        iterationOption && iterationChart.setOption(iterationOption);
+        
+        // Resize charts on window resize
+        window.addEventListener('resize', () => {
+            monitoringChart.resize();
+            levelsChart.resize();
+            iterationChart.resize();
+        });
+    });
+</script>
+
+</body>
+</html>
